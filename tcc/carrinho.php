@@ -99,13 +99,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['action']) && $_POST['a
                 <input type="hidden" name="action" value="checkout">
                 <button type="submit" class="btn checkout-button">Finalizar Compra</button>
             </form>
-
+        <div class="botoes">
         <?php else: ?>
             <p class="empty-cart-message">Seu carrinho está vazio.</p>
         <?php endif; ?>
-
         <a href="menu.php" class="btn return-button">Voltar ao Cardápio</a>
+        </div>
+
     </div>
+
 </body>
 </html>
 <?php include 'footer.php'; ?>
